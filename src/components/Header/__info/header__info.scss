@@ -1,0 +1,16 @@
+.header__info {
+    max-width: 367px;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, max-content));
+    grid-gap: 28px 0;
+    margin: 0 0 0 17px;
+}
+.header-title {
+    @include font400Seymour;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $colorWhiteText;
+    margin: 0;
+}

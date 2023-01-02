@@ -1,0 +1,9 @@
+@import '../vendor/normalize.scss';
+@import url(../fonts/fonts.scss);
+body {
+    
+}
+.page {
+    max-width: $widthPage;
+    margin: 0 auto;
+}

@@ -1,0 +1,80 @@
+@mixin font300 {
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+@mixin font400 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+@mixin font500 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+@mixin font600 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+@mixin font700 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+@mixin font900 {
+    font-family: 'Montserrat';
+    font-weight: 900; 
+}
+@mixin font400Seymour {
+    font-family: 'Seymour One';
+    font-weight: 400
+}
+@mixin buttonOpen {
+    @include font600;
+    font-size: 14px;
+    line-height: 17px;
+    width: 152px;
+    height: 42px;
+    border-radius: 10px;
+    background: $colorYellow;
+    color: #000000;
+    outline: none;
+    border: none;
+    transition: ease 0.7s;
+    &:hover {
+        background: $colorGreenHover
+    }
+    &:focus {
+        background: $colorGreenFocus;
+        color: $colorWhiteText;
+    }
+}
+@mixin button-open-modal {
+    @include font600;
+    font-size: 14px;
+    line-height: 18px;
+    background: transparent;
+    width: 134px;
+    height: 42px;
+    border: 2px solid $colorYellow;
+    border-radius: 10px;
+    transition: ease 0.7s;
+    color: $colorBlackText;
+    &:hover {
+        border: 2px solid $colorGreenHover;
+    }
+    &:focus {
+        border: 2px solid $colorGreenFocus;
+        color: $colorWhiteText;
+    }
+}
+@mixin link-href {
+    @include font600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorYellow;
+    transition: ease 0.7s;
+    &:hover {
+        color: $colorGreenHover;
+    }
+    &:focus {
+        color: $colorWhiteText;
+    }
+}
