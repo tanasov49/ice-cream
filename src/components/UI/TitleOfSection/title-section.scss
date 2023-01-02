@@ -5,9 +5,13 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    padding: 60px 0 0 0;
 }
 .title-section_section-products {
     color: $colorBlackText;
-    padding: 60px 0 0 0;
+    margin: 0;
+}
+.title-section_section-made {
+    color: $colorWhiteText;
     margin: 0;
 }

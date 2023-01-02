@@ -9,5 +9,5 @@ export interface IValues {
     src?: string,
     text?: string,
     number?: number,
-    bcgColor?: string 
+    bcgColor?: string, 
 }

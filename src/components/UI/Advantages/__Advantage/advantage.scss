@@ -1,0 +1,31 @@
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantage__image {
+    background-color: $colorYellow;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantage__title {
+    @include font700;
+    font-size: 58px;
+    line-height: 71px;
+    letter-spacing: 0.04em;
+    margin: 40px 0 0 0;
+}
+.advantage__text {
+    @include font400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $colorWhiteText;
+    margin: 16px 0 0 0;
+    max-width: 367px;
+}
