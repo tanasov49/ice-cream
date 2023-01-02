@@ -25,3 +25,14 @@ export const ourCafes = [
     {text: 'cafes', number: '16'},
     {text: 'food trucks', number: '23'},
 ]
+export const titleSectionProducts: IValues[] = [
+    {title: '100% natural', subtitle: 'products', classTitle: 'title-section_section-products', classSubtitle: 'subtitle-section_section-products'}
+]
+import IceCreams from '../images/Sections/SectionProducts/icecream.png'
+import IceCoffee from '../images/Sections/SectionProducts/icecoffee.png'
+import MilkShakes from '../images/Sections/SectionProducts/milkshakes.png'
+export const products: IValues[] = [
+    {src: IceCreams, title: 'ice cream', text: 'Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer', url: '#', class: 'product__image_ice-cream', bcgColor: '#AEC6A5'},
+    {src: IceCoffee, title: 'ice coffee', text: 'Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers', url: '#', class: 'product__image_ice-coffee', bcgColor: '#EFD478'},
+    {src: MilkShakes, title: 'milkshakes', text: 'Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice', url: '#', class: 'product__image_milkshakes', bcgColor: '#D6936D'}
+]

@@ -1,0 +1,12 @@
+.subtitle-section {
+    @include font400Seymour;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.subtitle-section_section-products {
+    color: $colorBlackText;
+    margin: 12px 0 0 0;
+}

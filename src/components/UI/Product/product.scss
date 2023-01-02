@@ -1,0 +1,105 @@
+.product {
+    position: relative;
+    border-radius: 24px;
+    width: 370px;
+    height: 535px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product__image {
+    position: absolute;
+    top: -($marginImage);
+    width: 302px;
+    height: 320px;
+    border-radius: 150px;
+}
+.product__image_ice-cream {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25)
+}
+.product__image_ice-coffee {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+.product__image_milkshakes {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+.product__title {
+    margin: ($marginImage - 17px) 0 0 0;
+    @include font700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $colorBlackText;
+}
+.product__text {
+    @include font400;
+    margin: 65px 0 0 0;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: $colorBlackText;
+    max-width: 242px;
+    text-align: center;
+    height: 147px;
+}
+.product__link {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 0 0;
+}
+.product__link:hover, .product__link span {
+    animation: arrow-hover 0.7s forwards;
+}
+.product__link span {
+    position: relative;
+    width: 50px;
+    height: 2px;
+    background-color: $colorBlackText;
+    left:0;
+    display: block;
+}
+.product__link span::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    top: -5px;
+    right: -2px;
+    border-radius: 1px;
+    background-color: $colorBlackText;
+    transform: rotate(45deg);
+}
+.product__link span::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    top: 5px;
+    right: -2px;
+    border-radius: 1px;
+    background-color: $colorBlackText;
+    transform: rotate(-45deg);
+}
+@keyframes arrow-hover {
+    0% {
+        width: 50px;
+    }
+    50% {
+        width: 53px;
+    }
+    75% {
+        width: 57;
+    }
+    100% {
+        width: 60px;
+    }
+}

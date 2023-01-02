@@ -1,0 +1,13 @@
+.title-section {
+    @include font700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.title-section_section-products {
+    color: $colorBlackText;
+    padding: 60px 0 0 0;
+    margin: 0;
+}
