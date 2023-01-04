@@ -3,12 +3,11 @@ import { IValues } from '../../../../interface/model'
 import './advantage.scss'
 interface PropsAdvantage {
   item: IValues,
-  key: number
 }
 
-export default function Advantages__Advantage({item, key}: PropsAdvantage) {
+export default function Advantages__Advantage({item}: PropsAdvantage) {
   return (
-    <div key={key} className='advantage'>
+    <div key={item.id} className='advantage'>
       <div className="advantage__image">
         <img src={item.src} alt={item.title} />
       </div>

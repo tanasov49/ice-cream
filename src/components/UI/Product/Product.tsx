@@ -3,11 +3,12 @@ import { IValues } from '../../../interface/model'
 import './product.scss'
 interface PropsProduct {
   item: IValues,
-  key: number
+  key: any
 }
-export default function Products({item, key}: PropsProduct) {
+export default function Products({item}: PropsProduct) {
+  
   return (
-    <div key={key} className='product' style={{backgroundColor: item.bcgColor}}>
+    <div key={item.id} className='product' style={{backgroundColor: item.bcgColor}}>
       <div className={`product__image ${item.class}`} style={{backgroundColor: item.bcgColor}}>
       <img   src={item.src} alt={`photo ${item.title}`} />
       </div>

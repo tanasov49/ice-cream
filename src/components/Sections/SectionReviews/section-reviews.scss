@@ -1,0 +1,19 @@
+.section-reviews {
+    background-image: url(../../../images/Sections/SectionReviews/bcgimage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1020px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-reviews__image {
+    position: relative;
+    width: 1013px;
+    height: 422px;
+    display: flex;
+    justify-content: center;
+    top: -80px;
+}

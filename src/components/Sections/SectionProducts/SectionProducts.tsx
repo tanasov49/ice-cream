@@ -11,8 +11,8 @@ export default function SectionProducts() {
         <TitleOfSection text={textSection[0]} />
         <SubtitleOfSection text={textSection[0]} />
         <div className='products'>
-            {products.map((item, index) =>
-            <Product item={item} key={index} />
+            {products.map((item) =>
+            <Product item={item} key={item.id} />
             )}
         </div>
     </section>

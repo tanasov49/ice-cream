@@ -34,9 +34,9 @@ import IceCreams from '../images/Sections/SectionProducts/icecream.png'
 import IceCoffee from '../images/Sections/SectionProducts/icecoffee.png'
 import MilkShakes from '../images/Sections/SectionProducts/milkshakes.png'
 export const products: IValues[] = [
-    {src: IceCreams, title: 'ice cream', text: 'Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer', url: '#', class: 'product__image_ice-cream', bcgColor: '#AEC6A5'},
-    {src: IceCoffee, title: 'ice coffee', text: 'Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers', url: '#', class: 'product__image_ice-coffee', bcgColor: '#EFD478'},
-    {src: MilkShakes, title: 'milkshakes', text: 'Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice', url: '#', class: 'product__image_milkshakes', bcgColor: '#D6936D'}
+    {src: IceCreams, title: 'ice cream', text: 'Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer', url: '#', class: 'product__image_ice-cream', bcgColor: '#AEC6A5', id: 1},
+    {src: IceCoffee, title: 'ice coffee', text: 'Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers', url: '#', class: 'product__image_ice-coffee', bcgColor: '#EFD478', id: 2},
+    {src: MilkShakes, title: 'milkshakes', text: 'Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice', url: '#', class: 'product__image_milkshakes', bcgColor: '#D6936D', id: 3}
 ]
 import Cow from '../images/Sections/SectionMade/cow.png'
 export const objectsSectionMade = {
@@ -47,7 +47,19 @@ import WeightSvg from '../images/Sections/SectionMade/weight.svg'
 import IceCremaSvg from  '../images/Sections/SectionMade/icecrema.svg'
 
 export const advantages: IValues[] = [
-    {src: CowSvg, title: '721', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.'},
-    {src: WeightSvg, title: '16kg', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.'},
-    {src: IceCremaSvg, title: '84', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.'}
+    {src: CowSvg, title: '721', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.', id: 1},
+    {src: WeightSvg, title: '16kg', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.', id: 2},
+    {src: IceCremaSvg, title: '84', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.', id: 3}
+]
+import ImageIceCreams from '../images/Sections/SectionReviews/imageicecreams.png'
+export const imageIceCreams = {
+    src: ImageIceCreams, alt: 'image ice-creams'
+}
+import PhotoBryan from '../images/Sections/SectionReviews/PhotoBryan.png'
+import PhotoDiana from '../images/Sections/SectionReviews/PhotoDiana.png'
+import PhotoSam from '../images/Sections/SectionReviews/PhotoSam.png'
+export const reviews: IValues[] = [
+    {src: PhotoBryan, title: 'Bryan, New-York', text: 'Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!', id: 1},
+    {src: PhotoDiana, title: 'Diana, Chicago', text: 'Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!', id: 2},
+    {src: PhotoDiana, title: 'Sam, Los Angeles', text: 'I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.', id: 3}
 ]

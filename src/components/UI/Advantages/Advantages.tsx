@@ -5,8 +5,8 @@ import './advantages.scss'
 export default function Advantages() {
   return (
     <div className="advantages">
-      {advantages.map((item, key) =>
-      <Advantages__Advantage item={item} key={key} />
+      {advantages.map((item) =>
+      <Advantages__Advantage item={item} key={item.id} />
       )}
     </div>
   )
