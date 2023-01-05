@@ -1,0 +1,57 @@
+.footer-nav {
+    align-self: baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 122px;
+    width: 96%;
+    margin: 120px auto 0;
+}
+.footer-text {
+    grid-column: 1;
+}
+.footer-text__title {
+    @include font400;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $colorWhiteText;
+    margin: 0;
+}
+.footer-text__subtitle {
+    margin: 14px 0 0 0;
+    @include font700;
+    font-size: 58px;
+    line-height: 71px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $colorWhiteText;
+}
+.footer-contacts {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    margin: 0 0 10px 0;
+    justify-self: right;
+}
+.footer-contacts__text {
+    margin: 0 10px 0 0;
+    @include font700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: $colorBlackText;
+}
+.footer-contacts__phone {
+    text-decoration: none;
+    @include font700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: $colorWhiteText;
+    transition: ease 0.7s;
+    &:hover {
+        color: $colorBlackText;
+    }
+}

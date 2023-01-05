@@ -1,0 +1,13 @@
+.footer {
+    background-color: $bcgGreen;
+    height: 889px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}

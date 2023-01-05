@@ -1,7 +1,6 @@
 .section-reviews {
     background-image: url(../../../images/Sections/SectionReviews/bcgimage.png);
     background-repeat: no-repeat;
-    background-position: center;
     height: 1020px;
     position: relative;
     display: flex;
@@ -10,7 +9,7 @@
     align-items: center;
 }
 .section-reviews__image {
-    position: relative;
+    position: absolute;
     width: 1013px;
     height: 422px;
     display: flex;

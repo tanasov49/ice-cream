@@ -40,8 +40,19 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.(png|svg|jpe?g|gif|jp2|webp)$/,
+        test: /\.(png|jpe?g|gif|jp2|webp)$/,
         type: 'asset/resource'
+      },
+      {
+        test: /\.svg$/i,
+        type: 'asset',
+        resourceQuery: /url/, // *.svg?url
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        resourceQuery: { not: [/url/] }, // exclude react component if *.svg?url
+        use: ['@svgr/webpack'],
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/,

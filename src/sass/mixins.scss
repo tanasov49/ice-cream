@@ -46,7 +46,7 @@
         color: $colorWhiteText;
     }
 }
-@mixin button-open-modal {
+@mixin button-open-without-border {
     @include font600;
     font-size: 14px;
     line-height: 18px;

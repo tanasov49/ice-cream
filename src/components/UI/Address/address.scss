@@ -1,0 +1,113 @@
+.address {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+.address-item {
+    max-width: 368px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.address-item__title {
+    @include font500;
+    color: $colorBlackText;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    background-color: $colorYellow;
+    text-transform: uppercase;
+    display: inline;
+    padding: 10px;
+}
+.address-item__city {
+    @include font500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: $colorBlackText;
+    margin: 32px 0 0 0;
+}
+.address-item__address {
+    @include font500;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: $colorOrangeText;
+    margin: 8px 0 0 0;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0 32px 0;
+    &:hover {
+        text-decoration: underline;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 288px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $colorBorderGrey;
+    }
+}
+.address-item__days {
+    @include font500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: $colorBlackText;
+    margin: 0;
+}
+.address-item__days_working-days {
+    margin: 64px 0 0 0;
+}
+.address-item__days_days-off {
+    margin: 12px 0 0 0;
+}
+.address-item__time {
+    @include font500;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorGreyText;
+    margin: 0;
+}
+.address-item__time_days-off {
+    position: relative;
+    padding: 0 0 32px 0;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 288px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $colorBorderGrey;
+    }
+}
+.address-item__phone {
+    @include font500;
+    margin: 32px 0 0 0;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorBlackText;
+    text-decoration: none;
+}
+.address-item__email {
+    @include font500;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorBlackText;
+    display: block;
+    text-decoration: none;
+}

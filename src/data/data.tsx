@@ -9,8 +9,10 @@ export const menuLinks: IValues[] = [
 ]
 export const buttonPage: IValues[] = [
     {title: 'Buy now >', class: 'button-open_header'},
-    {title: 'Products', class: 'button-open-modal_header-info'},
-    {title: 'Read more >', class: 'button-open-modal_section-made'}
+    {title: 'Products', class: 'button-open_header-info'},
+    {title: 'Read more >', class: 'button-open_section-made'},
+    {title: 'Our Locations >', class: 'button-open_footer-locations'},
+    {title: 'Franchise >', class: 'button-open_footer-franchise'}
 ]
 export const classesPage: IValues[]= [
     {class: 'logo_header'}
@@ -42,9 +44,9 @@ import Cow from '../images/Sections/SectionMade/cow.png'
 export const objectsSectionMade = {
     src: Cow, text1: 'Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.', text2: 'We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.', text3: 'This is enough to choose ice cream and coffee for any mood!'
 }
-import CowSvg from '../images/Sections/SectionMade/cow.svg'
-import WeightSvg from '../images/Sections/SectionMade/weight.svg'
-import IceCremaSvg from  '../images/Sections/SectionMade/icecrema.svg'
+import CowSvg from '../images/Sections/SectionMade/cow.svg?url'
+import WeightSvg from '../images/Sections/SectionMade/weight.svg?url'
+import IceCremaSvg from  '../images/Sections/SectionMade/icecrema.svg?url'
 
 export const advantages: IValues[] = [
     {src: CowSvg, title: '721', text: 'Aliquam ac dui vel dui vulputate consectetur. Mauris massa.', id: 1},
@@ -61,5 +63,21 @@ import PhotoSam from '../images/Sections/SectionReviews/PhotoSam.png'
 export const reviews: IValues[] = [
     {src: PhotoBryan, title: 'Bryan, New-York', text: 'Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!', id: 1},
     {src: PhotoDiana, title: 'Diana, Chicago', text: 'Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!', id: 2},
-    {src: PhotoDiana, title: 'Sam, Los Angeles', text: 'I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.', id: 3}
+    {src: PhotoSam, title: 'Sam, Los Angeles', text: 'I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.', id: 3}
+]
+export const address = [
+    {type: 'cafe', city: 'Chicago', address: '10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA', workingDays: 'Monday - Friday', timeWorking: '06:00 AM - 10:00 PM', daysOff: 'Saturday - Sunday', timeOff: '08:00 AM - 16:00 PM', phone: '+61(0) 383 766 284', email: 'noreply@envato.com', id: 1, urlMap: '#',},
+    {type: 'food truck', city: 'Los Angeles', address: '1003 Manhattan Ave, Manhattan Beach, CA 90263, USA', workingDays: 'Monday - Friday', timeWorking: '06:00 AM - 10:00 PM', daysOff: 'Saturday - Sunday', timeOff: '08:00 AM - 16:00 PM', phone: '+61(0) 383 766 284', email: 'noreply@envato.com', id: 2, urlMap: '#'},
+    {type: 'cafe', city: 'New York', address: '726 Sterling Pl, Brooklyn, NY 11222, USA', workingDays: 'Monday - Friday', timeWorking: '06:00 AM - 10:00 PM', daysOff: 'Saturday - Sunday', timeOff: '08:00 AM - 16:00 PM', phone: '+61(0) 383 766 284', email: 'noreply@envato.com', id: 3, urlMap: '#'}
+]
+export const textFooterNav = {
+    title: 'homemade ice cream made ', subtitle: 'with passion', text: 'Feel free to contact', phone: '+61 (0) 383 766 284'
+}
+import GithubSvg from '../images/Footer/FooterNav/Github.svg'
+import TelegramSvg from '../images/Footer/FooterNav/Telegram.svg'
+import FaceBookSvg from '../images/Footer/FooterNav/Facebook.svg' 
+export const socialIcons = [
+    {Svg: GithubSvg, url: '#', id: 1},
+    {Svg: TelegramSvg, url: '#', id: 2},
+    {Svg: FaceBookSvg, url: '#', id: 3}
 ]
