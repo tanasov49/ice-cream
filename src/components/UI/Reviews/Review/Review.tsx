@@ -3,13 +3,13 @@ import { IValues } from '../../../../interface/model'
 import './review.scss'
 interface PropsReview {
     item: IValues,
-    loading: boolean,
-    index: boolean
+    slideIndex: number,
+    index: number
 }
-export default function Review({item, loading, index}: PropsReview) {
+export default function Review({item, slideIndex, index}: PropsReview) {
   
   return (
-    <div key={item.id} className={loading === index ? 'review review_active' : 'review'}>
+    <div key={item.id} className={slideIndex === index + 1 ? 'review review_active' : 'review'}>
         <img className='review__image' src={item.src} alt={item.title} />
         <p className="review__text">{item.text}</p>
         <h5 className="review__title">{item.title}</h5>

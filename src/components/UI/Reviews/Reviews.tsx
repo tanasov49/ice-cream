@@ -5,13 +5,13 @@ import Review from './Review/Review'
 import { IValues } from '../../../interface/model'
 interface PropsValue {
   review: any,
-  loading: boolean,
+  slideIndex: number,
 }
-export default function Reviews({review, loading}: PropsValue) {
+export default function Reviews({review, slideIndex}: PropsValue) {
   return (
     <div className='reviews'>
-        {review.map((item) => 
-        <Review index={item.id} loading={loading} key={item.id} item={item} />
+        {review.map((item, index) => 
+        <Review index={index} slideIndex={slideIndex} key={item.id} item={item} />
         )}
     </div>
   )
