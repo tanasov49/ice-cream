@@ -5,8 +5,6 @@ import Reviews from '../../UI/Reviews/Reviews'
 import Dots from '../../UI/Dots/Dots'
 
 export default function SectionReviews() {
-    
-    const [loading, setLoading] = useState(false)
     const [slideIndex, setSlideIndex] = useState(1)
     const handleClick = (index: number) => {
       setSlideIndex(index)
