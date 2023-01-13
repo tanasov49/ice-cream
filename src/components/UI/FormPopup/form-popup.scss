@@ -1,0 +1,70 @@
+.form-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.form-submit__title {
+    @include font400Seymour;
+    font-size: 20px;
+    line-height: 28px;
+    color: $colorBlackText;
+    margin: 0;
+}
+.form-popup__input {
+    width: 368px;
+    height: 42px;
+    background: #f8d24e1a;
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding: 0 16px;
+    outline: none;
+    @include font400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorBlackText;
+    box-sizing: border-box;
+}
+.form-popup__input_name {
+    margin: 40px 0 0 0;
+}
+.form-popup__input_phone {
+    margin: 0;
+}
+.form-popup__text {
+    margin: 0;
+    width: 368px;
+    height: 84px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    @include font400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorBlackText;
+    padding: 11px 16px 0;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.form-popup__submit {
+    margin: 32px 0 0 0;
+    background-color: $colorYellow;
+    width: 121px;
+    height: 42px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    @include font600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorBlackText;
+}
+.form-popup__error {
+    @include font600;
+    height: 17px;
+    margin: 4px 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(196, 64, 64);
+}

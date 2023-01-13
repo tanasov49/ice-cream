@@ -18,7 +18,7 @@ export default function SectionMade() {
                 <p className='made-text__text'>{objectsSectionMade.text1}</p>
                 <p className='made-text__subtitle'>{objectsSectionMade.text2}</p>
                 <p className='made-text__subtitle'>{objectsSectionMade.text3}</p>
-                <ButtonOpen button={buttonPage[2]} />
+                {/* <ButtonOpen button={buttonPage[2]} /> */}
             </div>
         </div>
         <Advantages />

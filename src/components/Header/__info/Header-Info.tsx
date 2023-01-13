@@ -8,7 +8,7 @@ export default function HeaderInfo() {
   return (
     <div className='header__info'>
         <h1 className='header-title'>ice cream made with passion</h1>
-        <ButtonOpen button={buttonPage[1]} />
+        {/* <ButtonOpen button={buttonPage[1]} /> */}
         <LinkHref link={linksPage[0]} />
     </div>
   )

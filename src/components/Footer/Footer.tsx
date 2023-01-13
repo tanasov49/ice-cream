@@ -9,8 +9,8 @@ export default function Footer() {
     <footer className='footer'>
         <AsideFooter />
         <div className="footer-buttons">
-            <ButtonOpen button={buttonPage[3]} />
-            <ButtonOpen button={buttonPage[4]} />
+            {/* <ButtonOpen button={buttonPage[3]} />
+            <ButtonOpen button={buttonPage[4]} /> */}
         </div>
         <FooterNav />
     </footer>
