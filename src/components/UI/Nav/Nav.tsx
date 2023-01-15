@@ -7,12 +7,12 @@ import './nav.scss'
 import { buttonPage } from '../../../data/data'
 import { classesPage } from '../../../data/data'
 export default function Nav() {
-  const {openModal} = useContext(ModalContext)
+  const {openPopupBuy} = useContext(ModalContext)
   return (
     <nav className='nav'>
         <Logo classLogo={classesPage[0]} />
         <Menu />
-        <ButtonOpen handleOpen={openModal} button={buttonPage[0]} />
+        <ButtonOpen handleOpen={openPopupBuy} button={buttonPage[0]} />
     </nav>
   )
 }

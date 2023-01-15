@@ -81,3 +81,153 @@ export const socialIcons = [
     {Svg: TelegramSvg, url: '#', id: 2},
     {Svg: FaceBookSvg, url: '#', id: 3}
 ]
+
+export const ingredientsProducts = [
+    {src: IceCreams, title: 'ice cream', foodComponents: [
+        {
+            name: 'kcal',
+            amount: '320',
+            bcgColor: '#AEC6A5'
+        },
+        {
+            name: 'Protein',
+            amount: '4g',
+            bcgColor: '#AEC6A5'
+        },
+        {
+            name: 'Fats',
+            amount: '8,2g',
+            bcgColor: '#AEC6A5'
+        },
+        {
+            name: 'Fats',
+            amount: '40,4g',
+            bcgColor: '#AEC6A5'
+        },
+    ],
+    ingredients: [
+        {
+            name: 'Milk',
+            amount: '100ml',
+        },
+        {
+            name: 'Belgian chocolate',
+            amount: '20g',
+        },
+        {
+            name: 'Cream',
+            amount: '150 ml',
+        },
+        {
+            name: 'Cocoa powder',
+            amount: '30g',
+        },
+        {
+            name: 'Sugar',
+            amount: '40g',
+        },
+        {
+            name: 'Vanilla sugar',
+            amount: '10g',
+        }
+    ]
+    },
+    {src: IceCoffee, title: 'ice coffee', foodComponents: [
+        {
+            name: 'kcal',
+            amount: '320',
+            bcgColor: '#EFD478'
+        },
+        {
+            name: 'Protein',
+            amount: '4g',
+            bcgColor: '#EFD478'
+        },
+        {
+            name: 'Fats',
+            amount: '8,2g',
+            bcgColor: '#EFD478'
+        },
+        {
+            name: 'Fats',
+            amount: '40,4g',
+            bcgColor: '#EFD478'
+        },
+    ],
+    ingredients: [
+        {
+            name: 'Milk',
+            amount: '100ml',
+        },
+        {
+            name: 'Belgian chocolate',
+            amount: '20g',
+        },
+        {
+            name: 'Cream',
+            amount: '150 ml',
+        },
+        {
+            name: 'Cocoa powder',
+            amount: '30g',
+        },
+        {
+            name: 'Sugar',
+            amount: '40g',
+        },
+        {
+            name: 'Vanilla sugar',
+            amount: '10g',
+        }
+    ]
+    },
+    {src: MilkShakes, title: 'milk shakes',  foodComponents: [
+        {
+            name: 'kcal',
+            amount: '320',
+            bcgColor: '#D6936D',
+        },
+        {
+            name: 'Protein',
+            amount: '4g',
+            bcgColor: '#D6936D',
+        },
+        {
+            name: 'Fats',
+            amount: '8,2g',
+            bcgColor: '#D6936D',
+        },
+        {
+            name: 'Fats',
+            amount: '40,4g',
+            bcgColor: '#D6936D',
+        },
+    ],
+    ingredients: [
+        {
+            name: 'Milk',
+            amount: '100ml',
+        },
+        {
+            name: 'Belgian chocolate',
+            amount: '20g',
+        },
+        {
+            name: 'Cream',
+            amount: '150 ml',
+        },
+        {
+            name: 'Cocoa powder',
+            amount: '30g',
+        },
+        {
+            name: 'Sugar',
+            amount: '40g',
+        },
+        {
+            name: 'Vanilla sugar',
+            amount: '10g',
+        }
+    ]
+    },
+]

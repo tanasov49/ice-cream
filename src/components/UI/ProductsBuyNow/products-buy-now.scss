@@ -1,0 +1,109 @@
+.products-buy-now {
+    position: relative;
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+.product-buy-now__image {
+    border-radius: 150px;
+    height: 140px;
+    top: -50px;
+    img {
+        width: 132px;
+        height: 132px;
+    }
+}
+.product-buy-now__title {
+    padding: 20px 0;
+    margin: 0;
+    @include font700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $colorBlackText;
+    
+}
+.product-label {
+    width: 138px;
+    height: 198px;
+    position: relative;
+    z-index: 1;
+}
+.product-label__checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 16px;
+    z-index: 3;
+    top: 0;
+}
+.label-product {
+    position: relative;
+}
+.product-label__checkbox:hover {
+    background-color: rgba(156, 190, 143, 0.7);
+}
+
+.product-buy-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    &:before {
+        content: '';
+        display: block;
+        border-style: solid;
+        position: absolute;
+        height: 64%;
+        border-width: 0 2px 2px 2px;
+        width: 98%;
+        border-radius: 16px;
+        bottom: 0;
+        z-index: -3;
+        transition: background ease 0.7s;
+    }
+    &:nth-child(1):before {
+        background-color: #FFFFFF;
+        border-color: rgba(156, 190, 143, 0.7);
+    }
+    &:nth-child(2):before {
+        background-color: #FFFFFF;
+        border-color: rgba(248, 210, 78, 0.7);
+    }
+    &:nth-child(3):before {
+        background-color: #FFFFFF;
+        border-color: rgba(213, 117, 63, 0.7);
+    }
+    &:nth-child(1):hover:before {
+        background-color: rgba(156, 190, 143, 0.7);
+        border-color: rgba(156, 190, 143, 0.7);
+    }
+    &:nth-child(2):hover:before {
+        background-color: rgba(248, 210, 78, 0.7);
+        border-color: rgba(248, 210, 78, 0.7);
+    }
+    &:nth-child(3):hover:before {
+        background-color: rgba(213, 117, 63, 0.7);
+        border-color: rgba(213, 117, 63, 0.7);
+    }
+}
+.product-buy-now_active {
+    &:nth-child(1):before {
+        background-color: rgba(156, 190, 143, 0.7);
+        border-color: rgba(156, 190, 143, 0.7);
+    }
+    &:nth-child(2):before {
+        border-color: rgba(248, 210, 78, 0.7);
+        background-color: rgba(248, 210, 78, 0.7);
+    }
+    &:nth-child(3):before {
+        border-color: rgba(213, 117, 63, 0.7);
+        background-color: rgba(213, 117, 63, 0.7);
+    }
+}
