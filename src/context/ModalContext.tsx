@@ -10,7 +10,9 @@ interface iModalContext {
   openPopupBuy: () => void,
   handleProductClick: (product) => void,
   selectedProduct: {},
-  isOpenProductPopup: boolean
+  isOpenProductPopup: boolean,
+  isOpenReadMore: boolean,
+  openPopupReadMore: (e) => void
 }
 interface IValues {
   name: string,
@@ -33,7 +35,9 @@ export const ModalContext =  createContext<iModalContext>({
   openPopupBuy: () => {},
   handleProductClick: () => {},
   selectedProduct: {},
-  isOpenProductPopup: false
+  isOpenProductPopup: false,
+  isOpenReadMore: false,
+  openPopupReadMore: () => {}
 })
 export const ModalState = ({children}: {children: React.ReactNode}) => {
   const defaultValues:IValues = {
@@ -54,6 +58,7 @@ export const ModalState = ({children}: {children: React.ReactNode}) => {
   const [isOpenBuyPopup, seIsOpenBuyPopup] = useState(false)
   const [selectedProduct, setIsSelectedProduct] = useState({})
   const [isOpenProductPopup, setIsOpenProductPopup] = useState(false)
+  const [isOpenReadMore, setIsOpenReadMore] = useState(false)
   const openPopupBuy = () => {
     seIsOpenBuyPopup(true)
   }
@@ -62,6 +67,7 @@ export const ModalState = ({children}: {children: React.ReactNode}) => {
     setIsOpenProductPopup(false)
     setValues(defaultValues)
     setErrors(defaultValues)
+    setIsOpenReadMore(false)
   }
 
   const handleSubmitBuy = (e: any) => {
@@ -74,6 +80,9 @@ export const ModalState = ({children}: {children: React.ReactNode}) => {
   const handleProductClick = (product) => {
     setIsSelectedProduct(product)
     setIsOpenProductPopup(true)
+  }
+  const openPopupReadMore = (e: any) => {
+    setIsOpenReadMore(true)
   }
 
   const handleValidate = (name: string, value: string) => {
@@ -123,7 +132,7 @@ export const ModalState = ({children}: {children: React.ReactNode}) => {
     )
   }
   return (
-      <ModalContext.Provider value={{closePopup, handleSubmitBuy, handleChange, values, errors, canSubmit, isOpenBuyPopup, openPopupBuy, handleProductClick, selectedProduct, isOpenProductPopup}}>
+      <ModalContext.Provider value={{closePopup, handleSubmitBuy, handleChange, values, errors, canSubmit, isOpenBuyPopup, openPopupBuy, handleProductClick, selectedProduct, isOpenProductPopup, isOpenReadMore, openPopupReadMore}}>
           {children}
       </ModalContext.Provider>
   )

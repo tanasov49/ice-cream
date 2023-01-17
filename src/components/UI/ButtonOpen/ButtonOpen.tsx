@@ -4,7 +4,7 @@ import { IValues } from '../../../interface/model'
 
 interface TextProps {
     button: IValues
-    handleOpen: () => void
+    handleOpen: (e) => void
 }
 export default function ButtonOpen({button, handleOpen}: TextProps) {
 
