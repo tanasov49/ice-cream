@@ -1,0 +1,14 @@
+.popup-container__image {
+    width: 448px;
+    height: 260px;
+    border-radius: 10px;
+}
+.popup-container__link {
+    @include buttonOpen;
+    margin: 32px 0 0 0;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

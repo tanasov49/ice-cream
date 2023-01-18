@@ -6,6 +6,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 12px 0 0 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 43px;
+    }
 }
 .subtitle-section_section-products {
     color: $colorBlackText;

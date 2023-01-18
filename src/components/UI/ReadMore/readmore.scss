@@ -1,5 +1,6 @@
 .popup-container__frame {
     margin: 32px 0;
+    border-radius: 10px;
 }
 .popup-container__text {
     @include font400;

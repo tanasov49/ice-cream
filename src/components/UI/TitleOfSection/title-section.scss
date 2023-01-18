@@ -6,6 +6,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 60px 0 0 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 22px;
+        line-height: 27px;
+    }
 }
 .title-section_section-products {
     color: $colorBlackText;

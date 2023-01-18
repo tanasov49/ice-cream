@@ -18,6 +18,11 @@
     line-height: 71px;
     letter-spacing: 0.04em;
     margin: 40px 0 0 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 59px;
+        margin: 32px 0 0 0;
+    }
 }
 .advantage__text {
     @include font400;
@@ -28,4 +33,8 @@
     color: $colorWhiteText;
     margin: 16px 0 0 0;
     max-width: 367px;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }

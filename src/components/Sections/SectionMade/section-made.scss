@@ -2,14 +2,20 @@
     height: 1228px;
     max-height: 100%;
     background-color: $bcgGreen;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        height: 1075px;
+    }
 }
 .made-about {
     display: grid;
-    grid-gap: 8px 100px;
+    grid-gap: 0 100px;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(0, max-content));
     align-items: center;
     margin: 82px 0 0 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        grid-gap: 0 32px ;
+    }
 }
 .made-about__image {
     width: 490px;
@@ -21,9 +27,17 @@
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     border-radius: 250px;
     grid-column: 1;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        width: 335px;
+        height: 365px;
+    }
     img {
         width: 490px;
         height: 490px;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            width: 335px;
+            height: 330px;
+        }
     }
 }
 .made-text__text {
@@ -36,6 +50,10 @@
     grid-column: 2;
     margin: 0;
     max-height: 100%;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 12px;
+        max-width: 334px;
+    }
 }
 .made-text__subtitle {
     @include font400;
@@ -46,4 +64,8 @@
     color: $colorWhiteText;
     grid-column: 2;
     margin: 8px 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 12px;
+        max-width: 334px;
+    }
 }

@@ -2,9 +2,13 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
     gap: 32px;
     padding: 0;
     margin: 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        gap: 16px;
+    }
 }
 .address-item {
     max-width: 368px;
@@ -13,6 +17,11 @@
     border-radius: 24px;
     padding: 40px;
     box-sizing: border-box;
+    display: grid;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        max-width: 224px;
+        padding: 40px 24px;
+    }
 }
 .address-item__title {
     @include font500;
@@ -27,6 +36,8 @@
     text-transform: uppercase;
     display: inline;
     padding: 10px;
+    width: 138px;
+    box-sizing: border-box;
 }
 .address-item__city {
     @include font500;
@@ -35,6 +46,7 @@
     letter-spacing: 0.04em;
     color: $colorBlackText;
     margin: 32px 0 0 0;
+    
 }
 .address-item__address {
     @include font500;
@@ -42,22 +54,20 @@
     line-height: 183%;
     letter-spacing: 0.04em;
     color: $colorOrangeText;
-    margin: 8px 0 0 0;
+    display: block;
     text-decoration: none;
     position: relative;
-    padding: 0 0 32px 0;
+    min-height: 50px;
+    margin: 8px 0 32px 0;
     &:hover {
         text-decoration: underline;
     }
-    &::after {
-        content: '';
-        position: absolute;
-        width: 288px;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: $colorBorderGrey;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 26px;
     }
+    
+
 }
 .address-item__days {
     @include font500;
@@ -66,12 +76,22 @@
     letter-spacing: 0.04em;
     color: $colorBlackText;
     margin: 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    
 }
 .address-item__days_working-days {
-    margin: 64px 0 0 0;
+    padding: 64px 0 0 0;
+    border-top: 1px solid $colorBorderGrey;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        padding: 32px 0 0 0;
+    }
 }
 .address-item__days_days-off {
     margin: 12px 0 0 0;
+    
 }
 .address-item__time {
     @include font500;
@@ -79,19 +99,15 @@
     line-height: 30px;
     color: $colorGreyText;
     margin: 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px)  {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
 .address-item__time_days-off {
     position: relative;
     padding: 0 0 32px 0;
-    &::after {
-        content: '';
-        position: absolute;
-        width: 288px;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: $colorBorderGrey;
-    }
+    border-bottom: 1px solid $colorBorderGrey;
 }
 .address-item__phone {
     @include font500;
@@ -101,6 +117,10 @@
     line-height: 30px;
     color: $colorBlackText;
     text-decoration: none;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
 .address-item__email {
     @include font500;
@@ -110,4 +130,8 @@
     color: $colorBlackText;
     display: block;
     text-decoration: none;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 26px;
+    }
 }

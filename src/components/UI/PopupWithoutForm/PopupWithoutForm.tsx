@@ -7,15 +7,17 @@ interface IForm {
   title: string
 }
 export default function Popup({children, isOpen, title}: IForm) {
-    const {closePopup} = useContext(ModalContext)
+    const {closePopup, rootRef} = useContext(ModalContext)
+
   return (
     <div className={isOpen ? 'popup popup_opened' : 'popup'}>
-        <div className="popup-container">
+        <div ref={rootRef} className="popup-container">
             <button type='button' onClick={closePopup} className="popup-button-close">
                 <CloseSvg />
             </button>
             <h4 className="form-submit__title">{title}</h4>
-            {children}
+            {isOpen && children}
+            
         </div>
     </div>
   )

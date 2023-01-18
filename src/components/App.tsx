@@ -9,8 +9,10 @@ import ProductsBuyNow from './UI/ProductsBuyNow/ProductsBuyNow';
 import ProductBuyNow from './UI/ProductBuyNow/ProductBuyNow';
 import {ingredientsProducts} from '../data/data'
 import ReadMore from './UI/ReadMore/ReadMore';
+import MapContainer from './UI/MapContainer/MapContainer';
+import FranchiseModal from './UI/FranchiseModal/FranchiseModal'
 function App() {
-  const { handleSubmitBuy, isOpenBuyPopup, isOpenProductPopup, selectedProduct, isOpenReadMore} = useContext(ModalContext)
+  const { handleSubmitBuy, canSubmit, isOpenBuyPopup, isOpenProductPopup, selectedProduct, isOpenReadMore, isOpenPopupMap, isOpenFranchise, canSubmitWithEmail} = useContext(ModalContext)
   return (
     <div className="page">
       <Header />
@@ -19,6 +21,7 @@ function App() {
       <Popup 
         onSubmit={handleSubmitBuy}
         isOpen={isOpenBuyPopup}
+        canSubmit={canSubmit}
         
       >
         <ProductsBuyNow title={'Buy now'} />
@@ -26,7 +29,7 @@ function App() {
       <Popup
         onSubmit={handleSubmitBuy}
         isOpen={isOpenProductPopup}
-        
+        canSubmit={canSubmit}
       >
         {ingredientsProducts.map((item, key) => {
             if (selectedProduct === key) {
@@ -43,6 +46,19 @@ function App() {
       >
         <ReadMore />
       </PopupWithoutForm>
+      <PopupWithoutForm
+        title={'Our Locations'}
+        isOpen={isOpenPopupMap}
+      >
+        <MapContainer />
+      </PopupWithoutForm>
+      <Popup
+        onSubmit={handleSubmitBuy}
+        isOpen={isOpenFranchise}
+        canSubmit={canSubmitWithEmail}
+      >
+        <FranchiseModal title={'Thank you for your interest in owning an Ice Cream shop'} />
+      </Popup>
     </div>
   );
 }

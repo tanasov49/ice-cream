@@ -1,9 +1,40 @@
+.menu-popup {
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        background: $bcgGreen;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+}
+.menu-popup_active {
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        animation: menu-animate 3s;
+    }
+}
 .menu {
     display: flex;
     list-style-type: none;
     gap: 27px;
     padding: 0;
     margin: 0;
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        top: 40px;
+        max-width: 410px;
+    }
+
 }
 .menu-item__link {
     text-decoration: none;
@@ -12,10 +43,29 @@
     line-height: 20px;
     color: $colorWhiteText;
     transition: ease 0.7s;
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
+        font-size: 48px;
+        line-height: 59px;
+    }
     &:hover {
         color: $colorYellowHover;
     }
     &:focus {
         color: $colorGreenFocus;
     }
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
+        &:hover {
+            color: $colorBlackText;
+        }
+    }
+}
+@keyframes menu-animate {
+    0%{
+        filter: hue-rotate(0deg);
+        height: 0;
+      }
+    100%{
+        filter: hue-rotate(360deg);
+        height: 100vh;
+      }
 }

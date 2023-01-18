@@ -17,7 +17,8 @@
 }
 .review__text {
     @include font500;
-    max-width: 750px;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     line-height: 30px;
     text-align: center;
@@ -27,6 +28,14 @@
     background-color: $bcgGreen;
     border-radius: 24px;
     margin: 32px 0 0 0;
+    height: 138px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 26px;
+        padding: 29px 80px;
+       
+    }
 }
 .review__title {
     @include font500;
