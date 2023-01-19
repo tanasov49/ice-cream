@@ -17,7 +17,6 @@ export default function Popup({children, isOpen, title}: IForm) {
             </button>
             <h4 className="form-submit__title">{title}</h4>
             {isOpen && children}
-            
         </div>
     </div>
   )

@@ -10,7 +10,7 @@ interface PropsValue {
 export default function Reviews({review, slideIndex}: PropsValue) {
   return (
     <div className='reviews'>
-        {review.map((item, index) => 
+        {review.map((item, index: number) => 
         <Review index={index} slideIndex={slideIndex} key={item.id} item={item} />
         )}
     </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import Nav from '../UI/Nav/Nav'
 import './header.scss'
-import HeaderDescription from './__description/HeaderDescription'
-import HeaderInfo from './__info/Header-Info'
+import HeaderDescription from './Description/HeaderDescription'
+import HeaderInfo from './Info/Header-Info'
 import {imagesPage} from '../../data/data'
-import HeaderAbout from './__about/HeaderAbout'
+import HeaderAbout from './About/HeaderAbout'
 export default function Header() {
   return (
     <header className='header'>

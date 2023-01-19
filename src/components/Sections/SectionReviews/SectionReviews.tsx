@@ -1,14 +1,12 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useContext, useState} from 'react'
 import './section-reviews.scss'
 import {imageIceCreams, reviews} from '../../../data/data'
 import Reviews from '../../UI/Reviews/Reviews'
 import Dots from '../../UI/Dots/Dots'
+import { ModalContext } from '../../../context/ModalContext'
 
 export default function SectionReviews() {
-    const [slideIndex, setSlideIndex] = useState(1)
-    const handleClick = (index: number) => {
-      setSlideIndex(index)
-    }
+   const {slideIndex,  handleClick} = useContext(ModalContext)
   return (
     <section className='section-reviews'>
         <img className='section-reviews__image' src={imageIceCreams.src} alt={imageIceCreams.alt} />

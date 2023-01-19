@@ -5,7 +5,7 @@ import {ModalContext} from '../../../context/ModalContext'
 interface IForm {
   isOpen: boolean,
   children: React.ReactNode,
-  onSubmit: (e: any) => void,
+  onSubmit: (e: React.SyntheticEvent<EventTarget>) => void,
   canSubmit: boolean
   
 }

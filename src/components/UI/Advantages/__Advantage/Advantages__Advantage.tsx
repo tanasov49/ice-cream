@@ -4,7 +4,6 @@ import './advantage.scss'
 interface PropsAdvantage {
   item: IValues,
 }
-
 export default function Advantages__Advantage({item}: PropsAdvantage) {
   return (
     <div key={item.id} className='advantage'>

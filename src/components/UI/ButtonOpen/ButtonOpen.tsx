@@ -4,10 +4,9 @@ import { IValues } from '../../../interface/model'
 
 interface TextProps {
     button: IValues
-    handleOpen: (e) => void
+    handleOpen: (e: React.SyntheticEvent<EventTarget>) => void
 }
 export default function ButtonOpen({button, handleOpen}: TextProps) {
-
   return (
     <button onClick={handleOpen} className={`button-open ${button.class}`} type='button'>
       {button.title}

@@ -34,6 +34,9 @@
     @media screen and (max-width: 767px) and (min-width: 320px) {
         padding: 28px;
     }
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }
 .popup-container__image {
     width: 448px;
