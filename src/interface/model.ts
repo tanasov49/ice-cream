@@ -1,3 +1,4 @@
+// Интерфей для работы с данными старницы
 export interface IValues {
     id?: number,
     title?: string,

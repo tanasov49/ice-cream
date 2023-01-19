@@ -2,7 +2,7 @@ import React from 'react'
 import './reviews.scss'
 import {reviews} from '../../../data/data'
 import Review from './Review/Review'
-import { IValues } from '../../../interface/model'
+
 interface PropsValue {
   review: any,
   slideIndex: number,

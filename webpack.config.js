@@ -41,12 +41,18 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|jp2|webp)$/,
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[hash][ext][query]'
+        } 
       },
       {
         test: /\.svg$/i,
         type: 'asset',
         resourceQuery: /url/, // *.svg?url
+        generator: {
+          filename: 'assets/svg/[hash][ext][query]'
+        } 
       },
       {
         test: /\.svg$/i,
@@ -57,7 +63,6 @@ module.exports = {
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
-        
         generator: {
           filename: 'assets/fonts/[hash][ext][query]'
         } 

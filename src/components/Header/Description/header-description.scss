@@ -1,11 +1,12 @@
 .header-description {
     max-width: 439px;
     display: grid;
-    grid-template-columns: repeat(2, 152px) ;
+    grid-template-columns: repeat(2, 225px);
     grid-gap: 0 14px;
     margin: 42px 0 0 17px;
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         grid-gap: 0 33px;
+        grid-template-columns: repeat(2, 152px);
     }
     @media screen and (max-width: 767px) and (min-width: 320px) {
         display: none;

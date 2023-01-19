@@ -1,10 +1,6 @@
 import React from 'react'
-import { IValues } from '../../../../interface/model'
 import './advantage.scss'
-interface PropsAdvantage {
-  item: IValues,
-}
-export default function Advantages__Advantage({item}: PropsAdvantage) {
+export default function Advantages__Advantage({item}) {
   return (
     <div key={item.id} className='advantage'>
       <div className="advantage__image">

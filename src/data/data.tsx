@@ -1,3 +1,4 @@
+// Переменные всех значений страницы
 import { IValues } from "../interface/model";
 import IceCreamMany from '../images/Header/many-ice-cream.png'
 import IceCream from '../images/Header/ice-cream.png'

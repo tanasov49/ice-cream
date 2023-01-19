@@ -5,7 +5,7 @@ declare module "*.jpeg"
 declare module "*.png"
 
 declare module "*.gif"
-
+// Отдельно использовать для импорта SVG, в качестве компонента и ссылки на изображение
 declare module "*.svg" {
   const content: string;
   export default content;
