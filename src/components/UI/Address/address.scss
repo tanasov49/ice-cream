@@ -9,6 +9,9 @@
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         gap: 16px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        gap: 20px;
+    }
 }
 .address-item {
     max-width: 368px;
@@ -21,6 +24,10 @@
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         max-width: 224px;
         padding: 40px 24px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        width: 280px;
+        padding: 40px 32px;
     }
 }
 .address-item__title {
@@ -38,6 +45,10 @@
     padding: 10px;
     width: 138px;
     box-sizing: border-box;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
 }
 .address-item__city {
     @include font500;
@@ -46,6 +57,14 @@
     letter-spacing: 0.04em;
     color: $colorBlackText;
     margin: 32px 0 0 0;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
     
 }
 .address-item__address {
@@ -66,7 +85,11 @@
         font-size: 14px;
         line-height: 26px;
     }
-    
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 22px;
+        margin: 8px 0 24px 0;
+    }
 
 }
 .address-item__days {
@@ -80,6 +103,10 @@
         font-size: 14px;
         line-height: 26px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
     
 }
 .address-item__days_working-days {
@@ -87,6 +114,9 @@
     border-top: 1px solid $colorBorderGrey;
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         padding: 32px 0 0 0;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        padding: 24px 0 0 0;
     }
 }
 .address-item__days_days-off {
@@ -103,11 +133,18 @@
         font-size: 14px;
         line-height: 26px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
 }
 .address-item__time_days-off {
     position: relative;
     padding: 0 0 32px 0;
     border-bottom: 1px solid $colorBorderGrey;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        padding: 0 0 24px 0;
+    }
 }
 .address-item__phone {
     @include font500;
@@ -120,6 +157,11 @@
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         font-size: 14px;
         line-height: 26px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 24px 0 0 0;
     }
 }
 .address-item__email {

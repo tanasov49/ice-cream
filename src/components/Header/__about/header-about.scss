@@ -6,6 +6,13 @@
     right: 0;
     bottom: 0;
     margin: 0 16px 0 0;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        margin: 32px 0 0 0;
+        gap: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 .header-about__image {
     width: 456px;
@@ -14,11 +21,18 @@
         width: 257px;
         height: 325px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        width: 157px;
+        height: 208px;
+    }
 }
 .counter {
     display: flex;
     flex-direction: column;
-    max-width: 80px
+    max-width: 80px;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        display: none;
+    }
 }
 .counters {
     margin: 20px 0 0 0;

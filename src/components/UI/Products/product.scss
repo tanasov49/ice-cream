@@ -11,12 +11,16 @@
         width: 224px;
         padding: 26px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        width: 280px;
+        padding: 20px 40px;
+    }
 }
 .product__image {
     position: absolute;
     top: -($marginImage);
     border-radius: 150px;
-    @media screen and (max-width: 1024px) and (min-width: 768px) {
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
         top: -100px;
     }
     img {
@@ -25,6 +29,10 @@
         @media screen and (max-width: 1024px) and (min-width: 768px) {
             width: 199px;
             height: 197px;
+        }
+        @media screen and (max-width: 767px) and (min-width: 320px) {
+            width: 200px;
+            height: 200px;
         }
     }
 
@@ -50,10 +58,15 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $colorBlackText;
-    @media screen and (max-width: 1024px) and (min-width: 768px) {
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
         margin: 120px 0 0 0;
         font-size: 22px;
         line-height: 27px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        margin: 120px 0 0 0;
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 .product__text {
@@ -64,9 +77,10 @@
     color: $colorBlackText;
     max-width: 242px;
     text-align: center;
-    @media screen and (max-width: 1024px) and (min-width: 768px) {
+    margin: 40px 0 0 0;
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
         font-size: 14px;
-        
+        line-height: 25px;
     }
 }
 .product__open {

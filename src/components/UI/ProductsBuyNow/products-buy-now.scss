@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     gap: 33px;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 .product-buy-now__image {
     border-radius: 150px;

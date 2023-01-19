@@ -1,6 +1,5 @@
 import React from 'react'
 import MapImage from '../../../images/Footer/map.jpg'
-import './map-container.scss'
 export default function MapContainer() {
   return (
     <React.Fragment>

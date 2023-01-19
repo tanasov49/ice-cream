@@ -18,10 +18,15 @@
     line-height: 71px;
     letter-spacing: 0.04em;
     margin: 40px 0 0 0;
+    color: $colorWhiteText;
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         font-size: 48px;
         line-height: 59px;
         margin: 32px 0 0 0;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 36px;
+        line-height: 42px;
     }
 }
 .advantage__text {

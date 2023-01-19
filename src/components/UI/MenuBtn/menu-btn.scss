@@ -10,10 +10,14 @@
         right: 222px;
         z-index: 5;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        right: 26px;
+    }
 }
 .menu-btn_active {
     @media screen and (max-width: 1024px) and (min-width: 320px) {
         right: 39px;
+        position: fixed;
     }
 }
 .menu-btn__icon {
@@ -50,6 +54,7 @@
 }
 .menu-btn__icon_click {
     backface-visibility: hidden;
+
     transform: rotate(50deg);
     transition: 0.55s 0.5s;
     opacity: 1;

@@ -2,15 +2,25 @@
     align-self: baseline;
     display: grid;
     width: 100%;
+    height: 100%;
     grid-template-columns: repeat(2, minmax(0, max-content));
-    height: 122px;
     margin: 120px 0 54px 0;
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         grid-template-columns: repeat(2, minmax(0, max-content));
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 0;
+    }
 }
 .footer-text {
     grid-column: 1;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        grid-row: 1;
+        max-width: 232px;
+    }
 }
 .footer-text__title {
     @include font400;
@@ -23,6 +33,10 @@
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         font-size: 26px;
         line-height: 32px;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 .footer-text__subtitle {
@@ -37,6 +51,10 @@
         font-size: 48px;
         line-height: 59px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        font-size: 34px;
+        line-height: 41px;
+    }
 }
 .footer-contacts {
     display: flex;
@@ -48,6 +66,10 @@
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         align-self: center;
         margin: 41px 0 0 0;
+    }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        grid-column: 1;
+        grid-row: 3;
     }
 }
 .footer-contacts__text {

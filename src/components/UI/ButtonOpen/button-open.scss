@@ -7,25 +7,45 @@
 .button-open_header {
     margin: 0 16px 0 0;
     @include buttonOpen;
+    width: 152px;
+    height: 42px;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        position: absolute;
+        z-index: 3;
+        top: 463px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: fixed;
+    }
 }
 .button-open_header-info {
     @include button-open-without-border;
     grid-row: 2;
     grid-column: 1;
-    @media screen and (max-width: 1024px) and (min-width: 768px) {
+    width: 134px;
+    height: 42px;
+    @media screen and (max-width: 1024px) and (min-width: 320px) {
         width: 62px;
         height: 24px;
         font-size: 8px;
         line-height: 10px;
     }
+
 }
 .button-open_section-made {
     @include buttonOpen;
     margin: 48px 0 0 0;
+    width: 196px;
+    height: 42px;
 }
 .button-open_footer-locations {
     @include buttonOpen;
+    width: 196px;
+    height: 42px;
 }
 .button-open_footer-franchise {
     @include button-open-without-border;
+    width: 196px;
+    height: 42px;
 }

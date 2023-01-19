@@ -7,6 +7,9 @@
     @media screen and (max-width: 1024px) and (min-width: 768px) {
         grid-gap: 0 33px;
     }
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        display: none;
+    }
 }
 .header-description__image {
     width: 225px;
