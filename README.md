@@ -1,7 +1,7 @@
 # Проект Healthy-food
 Макет Figma [ссылка на мекет](https://www.figma.com/file/ITSOvIfp5tdEigTry7kcFj/ice-cream?node-id=1175%3A291&t=eL6RBs5ZcWJfWG0k-0)
 
-[Ссылка на демо страницу](https://tanasov49.github.io/healthy_food/)
+[Ссылка на демо страницу](https://tanasov49.github.io/ice-cream/)
 
 В данном проекте я использовал локальный импорт изображений, все названия блоков и прочии моменты я использую из файла data в папке data
 Данный проект создан при помощи React.
