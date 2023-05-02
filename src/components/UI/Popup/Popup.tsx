@@ -7,7 +7,6 @@ interface IForm {
   children: React.ReactNode,
   onSubmit: (e: React.SyntheticEvent<EventTarget>) => void,
   canSubmit: boolean
-  
 }
 export default function Popup({children, isOpen, onSubmit, canSubmit}: IForm) {
     const {closePopup, rootRef} = useContext(ModalContext)
